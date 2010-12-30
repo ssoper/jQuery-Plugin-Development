@@ -19,10 +19,10 @@
 ### Options
 * Ensure all options have defaults
 * Demo power of extend
-* Pass in function
 
 ### Use callbacks
 * Don't force user to pass in options
+* Demo power of isFunction
 
 ### Improve plugin using onTimer
 * Runs continuously
