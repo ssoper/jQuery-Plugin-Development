@@ -23,6 +23,9 @@
 * Don't force user to pass in options
 * Demo power of isFunction
 
+### Add more to callbacks
+* Pass additional information to a callback
+
 ### Improve plugin using onTimer
 * Runs continuously
 * Maintains low memory footprint
