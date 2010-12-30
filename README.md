@@ -12,26 +12,24 @@
     - Events
   * Standard interface for plugin development
 
-### Demonstration
+### Chainability
+* `return this` should always be the last statement
+* Manipulate DOM post plugin initialization
 
-1. Chainability
-  * `return this` should always be the last statement
-  * Manipulate DOM post plugin initialization
+### Options
+* Ensure all options have defaults
+* Demo power of extend
+* Pass in function
 
-2. Options
-  * Ensure all options have defaults
-  * Demo power of extend
-  * Pass in function
+### Use callbacks
+* Don't force user to pass in options
 
-3. Use callbacks
-  * Don't force user to pass in options
+### Improve plugin using onTimer
+* Runs continuously
+* Maintains low memory footprint
 
-4. Improve plugin using onTimer
-  * Runs continuously
-  * Maintains low memory footprint
-
-5. Info post plugin loading
-  * Load other plugin dependent on this plugin
-  * Since every plugin should return self, we need another way to get info
-  * Fire a custom event
-  * Especially useful for plugins which load themselves via a remote location and writ themselves into the DOM (i.e. Facebook)
+### Info post plugin loading
+* Load other plugin dependent on this plugin
+* Since every plugin should return self, we need another way to get info
+* Fire a custom event
+* Especially useful for plugins which load themselves via a remote location and writ themselves into the DOM (i.e. Facebook)
