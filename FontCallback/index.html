@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script src="../Common/jquery.js"></script>
+  <script src="fontCallback.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#options').fontCallback(function() {
+      $(this).css('color', 'red');
+    });
+  });
+  </script>
+</head>
+</html>
+<body>
+  Watch the text below get big
+  <div id='options'>
+    I will expand with options
+  </div>
+</body>
+</html>
