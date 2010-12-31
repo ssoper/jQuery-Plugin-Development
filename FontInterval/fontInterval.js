@@ -1,5 +1,5 @@
 (function($) {
-  $.fn.fontTimer = function(options) {
+  $.fn.fontInterval = function(options) {
     var settings = {
       fontSize: 20,
       duration: 5000
