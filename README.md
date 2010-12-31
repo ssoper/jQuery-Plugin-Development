@@ -26,7 +26,7 @@
 ### Add more to callbacks
 * Pass additional information to a callback
 
-### Improve plugin using onTimer
+### Improve plugin using setInterval
 * Runs continuously
 * Maintains low memory footprint
 
