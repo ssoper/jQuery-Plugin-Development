@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Interval</title>
+  <script src="../Common/jquery.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var e = document.createElement('script');
+    e.async = true;
+    e.src = 'fontEvent.js';
+    document.body.appendChild(e);
+  });
+
+  $(document).bind('fontEventReady', function(evt, loaded) {
+    $('body').append('Loaded in ' + loaded + ' milliseconds');
+    $('#dest').fontEvent();
+  });
+  </script>
+</head>
+</html>
+<body>
+  Watch the text below get big and small and big again
+  <div id='dest'>
+    I will expand and contract indefinitely
+  </div>
+</body>
+</html>
