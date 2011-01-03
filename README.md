@@ -34,4 +34,4 @@
 * Load other plugin dependent on this plugin
 * Since every plugin should return self, we need another way to get info
 * Fire a custom event
-* Especially useful for plugins which load themselves via a remote location and writ themselves into the DOM (i.e. Facebook)
+* Especially useful for plugins which load themselves via a remote location and write themselves into the DOM (i.e. Facebook)

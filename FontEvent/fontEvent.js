@@ -37,4 +37,3 @@
   var loaded = new Date() - start;
   $(document).trigger('fontEventReady', [loaded]);
 })(jQuery);
-
