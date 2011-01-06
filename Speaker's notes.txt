@@ -1,0 +1,90 @@
+Speaker's notes
+
+### Intro (1)
+* Name
+* Intridea, a client services company
+* Full stack developer (Rails and jQuery)
+* Also iPhone
+
+### Establish need (2)
+* Not all javascript was meant to be a jQuery plugin
+* A lot of cross-browser functionality can be written using existing Javascript.
+
+### Advantages (3)
+* Cross-browser compatibility in three key areas
+      o DOM manipulation
+      o Ajax
+      o Events
+* Standard interface for plugin development.
+* Easy access to jQuery library.
+
+### Basics (4)
+* All plugins are added to the jQuery.fn object. 
+* this refers to element the plugin was called on and returns a full jQuery object.
+* Always namespace and wrap your plugin. Prevents it from colliding with other libraries that use the $.
+
+### Basics (5)
+* All plugins are added to the jQuery.fn object. 
+* this refers to element the plugin was called on and returns a full jQuery object.
+* Always namespace and wrap your plugin.
+
+### Chainability (6)
+* Power of jQuery comes from ability to chain together jQuery functions.
+* jQuery functions dont return intrinsic values but instead a jQuery object.
+
+### Chainability (7)
+* We need to maintain that in our plugins that operate on DOM elements.
+
+### Options (8)
+* We need to give developers options.
+* Make use of jQuery's extend method.
+
+### Callbacks (9)
+* Many methods can take an optional callback.
+* If callback is an argument, don't force developers to pass in null arguments or an empty hash.
+* Make use of jQuery's isFunction method.
+
+### Callbacks (10)
+* Convention is to pass along something in the callback, often times the DOM element acted upon.
+* Take note, if `this` is exposed it probably is the raw element and needs to be rewrapped with jQuery.
+
+### setInterval (11)
+* Many UI plugins have a need to run indefinitely.
+* Maintain a low memory footprint while not colliding with themselves or other animations.
+* setInterval returns a unique id which we need to keep track of.
+* We need to wrap the animation portion of our plugin in a locally scoped function which can be passed to setInterval.
+
+### setInterval (12)
+* First argument to setInterval should always be an anonymous function, even if used to call a method. 
+* Second argument is the duration between calls.
+* Build in a slight delay between calls.
+
+### Event (13)
+* Sometimes we can't guarantee what will be loaded when.
+* We can trigger a global event post plugin loading and pass useful information.
+
+### Event (14)
+* Load the Javascript asynchronously.
+* Often used method to load libraries from external sites such as Facebook's Javascript API.
+
+### Event (15)
+* Bind to the event triggered by the plugin
+
+### Summary (16)
+* Always wrap your plugin.
+* Don't rewrap this.
+
+### Summary (17)
+* If your plugin acts on the DOM, always return this.
+* Pass in arguments via a hash and extend it.
+
+### Summary (18)
+* Detect callback using isFunction.
+* Use setInterval wisely for long running plugins.
+* You can use events for loading plugins from less than reliable external sources.
+
+### Resources (19)
+* Documentation on jQuery site
+* Established list of plugins
+* Sample code from this presentation plus slides
+* Myself
